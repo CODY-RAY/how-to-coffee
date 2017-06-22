@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var x = 0
     let milknames = ["2%", "WH", "N" , ""]
     var addons: (array:[String],index:Int) = (["v","sfv","hotH20","c","tn","m"], 0)
-    var sweetenersSelected: [Sweeteners:UInt] = [:]
+    var sweetenersSelected: [Sweeteners:Int] = [:]
     var customSelected: [Custom:Mods] = [:]
     let generator = Generator()
     var drink:Drink?
@@ -347,7 +347,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let espressoInfo = (NIL: espresso?.backgroundColor, name: espresso?.image?.accessibilityIdentifier!)
         let steamInfo    = (NIL: steam?.backgroundColor   , name: steam?.image?.accessibilityIdentifier!)
         
-        
+         
         if (sizeInfo.NIL != nil && espressoInfo.NIL != nil ) {
          
             if (milk == drink?.milk?.milkType.rawValue || drink?.milk == nil ) && (sizeInfo.name! == ozStrings[(drink?.size?.rawValue)!]) && (espressoInfo.name! ==  drink!.shots!.numOfshots.description) && (drink?.milk == nil || (steamInfo.name! == drink?.milk?.steamedFor.rawValue.description))  {
@@ -385,16 +385,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     sweetenersSelected.removeValue(forKey: s)
                   }else{
                     
-                    sweetenersSelected.updateValue(UInt(pumpsInfo.name!)!, forKey: s)
+                    sweetenersSelected.updateValue(Int(pumpsInfo.name!)!, forKey: s)
                 }
-            }
+            }else{
             //TODO: todo 
+            
             if let s = Custom(rawValue:f.uppercased()) {
                 if pumpsInfo.name! == "_"{
                     customSelected.removeValue(forKey: s)
                 }else{
                     customSelected.updateValue(.normal, forKey: s)
                 }
+            }
             }
         }
     }

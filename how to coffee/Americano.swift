@@ -13,7 +13,7 @@ final class Americano: help, Drink {
     var iced:Bool = false
     var size: Sizes?
     var custom: [Custom : Mods]?
-    var sweetener: [Sweeteners: UInt]?
+    var sweetener: [Sweeteners: Int]?
     var shots:(espressoType:Espresso , numOfshots:Int )? = (Espresso.regular , 1)
     var milk: (milkType: Milk, steamedFor: Steam)? = nil
     var drinkChars:String = "a"

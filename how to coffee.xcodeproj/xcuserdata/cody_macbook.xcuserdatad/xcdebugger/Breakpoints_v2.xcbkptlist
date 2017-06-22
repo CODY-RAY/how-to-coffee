@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "how to coffee/Mocha.swift"
-            timestampString = "519800760.698171"
+            filePath = "how to coffee/ViewController.swift"
+            timestampString = "519807587.102014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "setSize(size:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "how to coffee/Mocha.swift"
-            timestampString = "519801350.893311"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "setSize(size:)"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
+            landmarkName = "showAddOns(isWater:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

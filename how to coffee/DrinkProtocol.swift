@@ -95,7 +95,7 @@ enum Steam : Int {
 protocol Drink {
     var iced:Bool   { get set }
     var size: Sizes? { get set }
-    var sweetener: [Sweeteners: UInt ]? { get set }
+    var sweetener: [Sweeteners: Int ]? { get set }
     var custom: [ Custom : Mods ]? { get set }
     var shots:(espressoType:Espresso , numOfshots:Int )? { get set }
     var milk: (milkType:Milk,steamedFor:Steam)?  { get set }

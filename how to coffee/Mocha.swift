@@ -13,13 +13,13 @@ final class Mocha: help , Drink {
     var iced: Bool   = false
     var size: Sizes?
     var custom: [Custom : Mods]?
-    var sweetener: [Sweeteners: UInt]? = [.mocha : 0 ]
+    var sweetener: [Sweeteners: Int]? = [.mocha : 0 ]
     var shots:(espressoType:Espresso , numOfshots:Int )? = (Espresso.regular , 1)
     var milk: (milkType: Milk, steamedFor: Steam)? = (Milk.two, Steam.fourSeconds)
     var drinkChars:String = "m"
     
     override init() {
-        
+      
     }
     
     func setSize(size:Sizes){
@@ -27,9 +27,7 @@ final class Mocha: help , Drink {
         self.size = size
         self.shots?.numOfshots = oneOrTwo(1, tipPoint: Sizes.Grande, size: size)
         let x = addForSize(2, size: size)
-        let y = UInt(x)
-        
-        sweetener?.updateValue(y, forKey: .mocha)
-        
+        sweetener?.updateValue(x, forKey: .mocha)
+      
     }
 }
