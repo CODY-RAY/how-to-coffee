@@ -8,7 +8,7 @@
 
 import Foundation
 struct Generator {
-    static let arrayOfDrinks:[Drink] = [Mocha()]
+    static let arrayOfDrinks:[Drink] = [ HotChocolate(),Latte(),Americano(),Cappuccino(),Mocha()]
     
     func getDrink() -> Drink {
         

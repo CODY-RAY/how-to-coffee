@@ -19,6 +19,7 @@
 		C7DF2E531E9EE1AA003C3DC9 /* addOneForSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DF2E521E9EE1AA003C3DC9 /* addOneForSize.swift */; };
 		C7DF2E551EA42CA2003C3DC9 /* Americano.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DF2E541EA42CA2003C3DC9 /* Americano.swift */; };
 		C7EF702F1EFB4DB6003898FC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EF702E1EFB4DB6003898FC /* StartViewController.swift */; };
+		C7EF70311F05C85D003898FC /* HotChocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EF70301F05C85D003898FC /* HotChocolate.swift */; };
 		C7F0DE351ED019AD007B9546 /* milk_pics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F0DE341ED019AD007B9546 /* milk_pics.xcassets */; };
 		C7F0DE381ED01A32007B9546 /* arrows.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F0DE371ED01A32007B9546 /* arrows.xcassets */; };
 		C7F0DE3A1ED01A71007B9546 /* mis.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F0DE391ED01A71007B9546 /* mis.xcassets */; };
@@ -43,6 +44,7 @@
 		C7DF2E521E9EE1AA003C3DC9 /* addOneForSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addOneForSize.swift; sourceTree = "<group>"; };
 		C7DF2E541EA42CA2003C3DC9 /* Americano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Americano.swift; sourceTree = "<group>"; };
 		C7EF702E1EFB4DB6003898FC /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C7EF70301F05C85D003898FC /* HotChocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotChocolate.swift; sourceTree = "<group>"; };
 		C7F0DE341ED019AD007B9546 /* milk_pics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = milk_pics.xcassets; sourceTree = "<group>"; };
 		C7F0DE371ED01A32007B9546 /* arrows.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = arrows.xcassets; sourceTree = "<group>"; };
 		C7F0DE391ED01A71007B9546 /* mis.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = mis.xcassets; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				C79FF2211EAD5C8900ACF867 /* Latte.swift */,
 				C7F0DE491ED3EF54007B9546 /* cappuccino.swift */,
 				C721EDC61EF344A100042941 /* Mocha.swift */,
+				C7EF70301F05C85D003898FC /* HotChocolate.swift */,
 			);
 			name = drinks;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				C7DF2E551EA42CA2003C3DC9 /* Americano.swift in Sources */,
 				C79A2D9F1E876810007737F6 /* DrinkProtocol.swift in Sources */,
 				C7F0DE481ED3DCD2007B9546 /* generator.swift in Sources */,
+				C7EF70311F05C85D003898FC /* HotChocolate.swift in Sources */,
 				C7DF2E531E9EE1AA003C3DC9 /* addOneForSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

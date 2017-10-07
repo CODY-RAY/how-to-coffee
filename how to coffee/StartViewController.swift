@@ -10,6 +10,7 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
     
     var win = false
     
@@ -17,6 +18,11 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if win {
+        image.image = UIImage(named: "good")
+        }else{
+        image.image = UIImage(named: "upset")
+        }
     }
 
     override func didReceiveMemoryWarning() {

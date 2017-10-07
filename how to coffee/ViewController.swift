@@ -39,14 +39,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        decafLabel.delegate = self
+//        scollview.contentSize.height = 2500
+//        shotsLabel.delegate = self
+//        drinkTextLable.delegate = self
+//        setUpDrink()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
         decafLabel.delegate = self
         scollview.contentSize.height = 2500
         shotsLabel.delegate = self
         drinkTextLable.delegate = self
         setUpDrink()
-        
     }
-    
     //MARK: rand
     
     func setUpDrink()  {
@@ -348,27 +356,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let steamInfo    = (NIL: steam?.backgroundColor   , name: steam?.image?.accessibilityIdentifier!)
         
          
-        if (sizeInfo.NIL != nil && espressoInfo.NIL != nil ) {
+        if (sizeInfo.NIL != nil  ) {
          
-            if (milk == drink?.milk?.milkType.rawValue || drink?.milk == nil ) && (sizeInfo.name! == ozStrings[(drink?.size?.rawValue)!]) && (espressoInfo.name! ==  drink!.shots!.numOfshots.description) && (drink?.milk == nil || (steamInfo.name! == drink?.milk?.steamedFor.rawValue.description))  {
+            if (milk == drink?.milk?.milkType.rawValue || drink?.milk == nil ) && (sizeInfo.name! == ozStrings[(drink?.size?.rawValue)!]) && ( drink?.shots == nil || (espressoInfo.name! ==  drink!.shots!.numOfshots.description) ) && (drink?.milk == nil || (steamInfo.name! == drink?.milk?.steamedFor.rawValue.description))  {
              
                 if (drink?.sweetener == nil && sweetenersSelected.isEmpty) || ((drink?.sweetener != nil) && (drink?.sweetener)! == sweetenersSelected ){
                     
                     if (drink?.custom == nil && customSelected.isEmpty) || ((drink?.custom != nil) && (drink?.custom)! == customSelected ){
-                        self.checkButt.backgroundColor = UIColor(red: 0.1, green: 0.74, blue: 0.2, alpha: 1.0)
                         
                         correct = true
-                        performSegue(withIdentifier: "win", sender: nil)
-                        
+                       
                     }else{
-                        checkButt.backgroundColor = UIColor.red
+                        correct = false
                     }
                 }else{
-                    checkButt.backgroundColor = UIColor.red
+                        correct = false
                 }
             }else{
-                checkButt.backgroundColor = UIColor.red
+                        correct = false
             }
+            performSegue(withIdentifier: "win", sender: nil)
         }
         
     }

@@ -135,8 +135,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="gn3-cC-0FP">
-                                <rect key="frame" x="16" y="20" width="343" height="498"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="good" id="gn3-cC-0FP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pFh-j9-8tD">
@@ -155,14 +155,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.12650409340858459" green="0.14871779084205627" blue="0.17053300142288208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="gn3-cC-0FP" id="3B7-a8-2C3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gP8-16-Xg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705" y="155"/>
+            <point key="canvasLocation" x="704.5" y="154.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="coffee" width="230" height="317"/>
+        <image name="good" width="4032" height="3024"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
